@@ -1,10 +1,8 @@
-if exist "%SystemRoot%\SysWOW64" path %path%;%windir%\SysNative;%SystemRoot%\SysWOW64;%~dp0
-bcdedit >nul
-if '%errorlevel%' NEQ '0' (goto UACPrompt) else (goto UACAdmin)
-:UACPrompt
-%1 start "" mshta vbscript:createobject("shell.application").shellexecute("""%~0""","::",,"runas",1)(window.close)&exit
-exit /B
-:UACAdmin
+whoami /priv | find "SeDebugPrivilege"> nul
+if %errorlevel% neq 0 (
+@powershell start-process "%~0" -verb runas
+exit
+)
 cd /d "%~dp0"
 xcopy /e skus %windir%\system32\spp\tokens\skus
 cscript.exe %windir%\system32\slmgr.vbs /rilc
