@@ -265,11 +265,3 @@ Windows Registry Editor Version 5.00
 "MouseSpeed"="0"
 "MouseThreshold1"="0"
 "MouseThreshold2"="0"
-; Maybe I will find an easy solution to implement that setting... Or just install linux and forgive that crap that Microsoft created...
-
-;[HKEY_USERS\S-1-5-21-3773685152-3462737956-1595412409-1001\SOFTWARE\Microsoft\Windows\CurrentVersion\CloudStore\Store\Cache\DefaultAccount\$$windows.data.notifications.quiethourssettings\Current]
-;"Data"=hex:02,00,00,00,e7,8c,ce,45,3d,3d,d8,01,00,00,00,00,43,42,01,00,c2,0a,\
-;  01,d2,14,26,4d,00,69,00,63,00,72,00,6f,00,73,00,6f,00,66,00,74,00,2e,00,51,\
-;  00,75,00,69,00,65,00,74,00,48,00,6f,00,75,00,72,00,73,00,50,00,72,00,6f,00,\
-;  66,00,69,00,6c,00,65,00,2e,00,41,00,6c,00,61,00,72,00,6d,00,73,00,4f,00,6e,\
-;  00,6c,00,79,00,ca,28,00,00
