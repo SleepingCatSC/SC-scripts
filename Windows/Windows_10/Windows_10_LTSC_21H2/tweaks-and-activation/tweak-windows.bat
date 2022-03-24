@@ -23,6 +23,7 @@ powercfg /SETDCVALUEINDEX 381b4222-f694-41f0-9685-ff5bb260df2e 7516b95f-f776-446
 powercfg /SETACVALUEINDEX 381b4222-f694-41f0-9685-ff5bb260df2e 7516b95f-f776-4464-8c53-06167f40cc99 17aaa29b-8b43-4b94-aafe-35f64daaf1ee 0
 powercfg /hibernate off
 bcdedit /deletevalue useplatformclock
+bcdedit /set {current} quietboot Yes
 call Win10LTSC1809activation\win-activate.bat
 reg import registry-tweak.reg
 taskkill /f /im explorer.exe & start explorer.exe
