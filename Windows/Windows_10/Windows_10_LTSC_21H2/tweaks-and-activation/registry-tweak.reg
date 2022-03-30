@@ -42,6 +42,9 @@ Windows Registry Editor Version 5.00
 "NotifyOnUsbErrors"=dword:00000000
 "NotifyOnWeakCharger"=dword:00000000
 
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings]
+"AutoConfigURL"="https://antizapret.prostovpn.org/proxy.pac"
+
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\Personalize]
 "AppsUseLightTheme"=dword:00000000
 "ColorPrevalence"=dword:00000000
