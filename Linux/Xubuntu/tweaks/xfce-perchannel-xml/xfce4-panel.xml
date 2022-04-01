@@ -2,7 +2,8 @@
 
 <channel name="xfce4-panel" version="1.0">
   <property name="configver" type="int" value="2"/>
-  <property name="panels" type="uint" value="1">
+  <property name="panels" type="array">
+    <value type="int" value="0"/>
     <property name="panel-0" type="empty">
       <property name="autohide-behavior" type="uint" value="0"/>
       <property name="background-style" type="uint" value="0"/>
@@ -14,10 +15,10 @@
         <value type="int" value="2"/>
         <value type="int" value="3"/>
         <value type="int" value="4"/>
-        <value type="int" value="6"/>
-        <value type="int" value="10"/>
         <value type="int" value="7"/>
-        <value type="int" value="11"/>
+        <value type="int" value="10"/>
+        <value type="int" value="6"/>
+        <value type="int" value="5"/>
         <value type="int" value="12"/>
       </property>
       <property name="position" type="string" value="p=8;x=960;y=1062"/>
@@ -39,10 +40,6 @@
       <property name="mpris-players" type="string" value="chromium.instance1671"/>
       <property name="show-notifications" type="bool" value="true"/>
       <property name="blacklisted-players" type="string" value=""/>
-    </property>
-    <property name="plugin-11" type="string" value="separator">
-      <property name="expand" type="bool" value="false"/>
-      <property name="style" type="uint" value="0"/>
     </property>
     <property name="plugin-12" type="string" value="clock">
       <property name="digital-format" type="string" value="%d %b, %H:%M"/>
@@ -67,6 +64,10 @@
       <property name="known-items" type="array">
         <value type="string" value="nm-applet"/>
       </property>
+    </property>
+    <property name="plugin-5" type="string" value="separator">
+      <property name="style" type="uint" value="0"/>
+      <property name="expand" type="bool" value="false"/>
     </property>
   </property>
 </channel>
