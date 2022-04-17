@@ -1,5 +1,5 @@
 xargs sudo apt -y purge <remove-packages;sudo apt -y autoremove
-sudo apt -y update;sudo apt -y upgrade
+sudo apt update;sudo apt -y upgrade
 xargs sudo apt -y install <install-packages
 git clone https://github.com/elfmz/far2l
 mkdir -p far2l/_build;cd far2l/_build
