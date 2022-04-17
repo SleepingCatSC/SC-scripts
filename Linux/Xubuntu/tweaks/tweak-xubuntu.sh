@@ -1,17 +1,21 @@
-sudo apt -y purge catfish gucharmap engrampa gnome-font-viewer mate-calc mousepad xfce4-notes onboard xfburn libreoffice* gnome-mines sgt-puzzles gnome-sudoku simple-scan gimp parole firefox pidgin thunderbird transmission-gtk bluez system-config-printer software-properties-gtk gigolo xfce4-taskmanager snapd;sudo apt -y autoremove
-sudo apt -y install mpv p7zip-full
-sudo rm /usr/share/xfce4/backdrops/*
-sudo wget https://www.htmlcsscolor.com/preview/32x32/000000.png -P /usr/share/xfce4/backdrops
-sudo find /usr/share/backgrounds/ -name \* -type f -delete
-sudo sed -i 's/enabled=1/enabled=0/g' /etc/default/apport
-cp xfce-perchannel-xml/* ~/.config/xfce4/xfconf/xfce-perchannel-xml
-sudo cp locale /etc/default
-sudo apt-get install gawk m4 libwxgtk3.0-gtk3-dev libx11-dev libxi-dev libpcre3-dev libxerces-c-dev libspdlog-dev libuchardet-dev libssh-dev libssl-dev libsmbclient-dev libnfs-dev libneon27-dev libarchive-dev cmake g++ git -y
+xargs sudo apt -y purge <remove-packages;sudo apt -y autoremove
+xargs sudo apt -y install <install-packages
 git clone https://github.com/elfmz/far2l
-mkdir -p far2l/_build
-cd far2l/_build
+mkdir -p far2l/_build;cd far2l/_build
 cmake -DUSEWX=yes -DCMAKE_BUILD_TYPE=Release ..
 make -j$(nproc --all)
 sudo make install
-rm -rf ../../far2l
+cd -;rm -rf far2l
+sudo swapoff -a
+sudo dd if=/dev/zero of=/swapfile bs=1024 count=16777216
+sudo mkswap /swapfile
+sudo chmod 600 /swapfile
+sudo swapon /swapfile
+sudo rm /usr/share/xfce4/backdrops/*
+sudo find /usr/share/backgrounds/ -name \* -type f -delete
+sudo wget https://www.htmlcsscolor.com/preview/32x32/000000.png -P /usr/share/xfce4/backdrops
+cp xfce-perchannel-xml/* ~/.config/xfce4/xfconf/xfce-perchannel-xml
+cat pac-proxy | sudo tee -a /etc/environment
+sudo mkdir /etc/X11/xorg.conf.d/;cat turn-off-mouse-acceleration | sudo tee -a /etc/X11/xorg.conf.d/50-mouse-acceleration.conf
+cat bash-aliases >> ~/.bashrc
 reboot
