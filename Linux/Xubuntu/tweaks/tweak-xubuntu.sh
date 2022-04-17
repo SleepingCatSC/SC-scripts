@@ -1,6 +1,7 @@
 xargs sudo apt -y purge <remove-packages;sudo apt -y autoremove
 sudo apt update;sudo apt -y upgrade
 xargs sudo apt -y install <install-packages
+wget https://github.com/clickot/ungoogled-chromium-binaries/releases/download/100.0.4896.127-1/ungoogled-chromium_100.0.4896.127-1.1.AppImage -P .
 git clone https://github.com/elfmz/far2l
 mkdir -p far2l/_build;cd far2l/_build
 cmake -DUSEWX=yes -DCMAKE_BUILD_TYPE=Release ..
