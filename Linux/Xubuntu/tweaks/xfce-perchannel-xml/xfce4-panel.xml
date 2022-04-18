@@ -36,7 +36,7 @@
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
       <property name="enable-mpris" type="bool" value="true"/>
       <property name="mixer-command" type="string" value="pavucontrol"/>
-      <property name="mpris-players" type="string" value="chromium.instance1209;chromium.instance123475;chromium.instance1256;chromium.instance1262;chromium.instance1292;chromium.instance1639;chromium.instance1671;chromium.instance2067;chromium.instance2490;chromium.instance2677;chromium.instance4020"/>
+      <property name="mpris-players" type="string" value="chromium.instance1209;chromium.instance123475;chromium.instance1256;chromium.instance1262;chromium.instance1292;chromium.instance1639;chromium.instance1671;chromium.instance2067;chromium.instance2414;chromium.instance2490;chromium.instance2677;chromium.instance4020"/>
       <property name="show-notifications" type="bool" value="true"/>
       <property name="blacklisted-players" type="string" value=""/>
     </property>
@@ -46,7 +46,8 @@
     </property>
     <property name="plugin-12" type="string" value="clock">
       <property name="digital-format" type="string" value="%I:%M %p"/>
-      <property name="tooltip-format" type="string" value="%A %d %B %Y"/>
+      <property name="tooltip-format" type="string" value="%x"/>
+      <property name="mode" type="uint" value="2"/>
     </property>
     <property name="plugin-2" type="string" value="separator">
       <property name="expand" type="bool" value="false"/>
@@ -72,6 +73,7 @@
     </property>
     <property name="plugin-7" type="string" value="statusnotifier">
       <property name="known-items" type="array">
+        <value type="string" value="steam"/>
         <value type="string" value="nm-applet"/>
       </property>
     </property>
