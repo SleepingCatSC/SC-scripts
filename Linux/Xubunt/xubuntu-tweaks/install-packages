@@ -6,6 +6,7 @@ mpv
 nvidia-driver-510
 openssh-server
 p7zip-full
+qemu
 r8168-dkms
 vim
 vsftpd
