@@ -256,9 +256,6 @@ Windows Registry Editor Version 5.00
 "ShowTaskViewButton"=dword:00000000
 "TaskbarGlomLevel"=dword:00000002
 
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\VisualEffects]
-"VisualFXSetting"=dword:00000002
-
 [HKEY_CURRENT_USER\Control Panel\Mouse]
 "MouseSpeed"="0"
 "MouseThreshold1"="0"
