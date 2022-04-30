@@ -1,8 +1,8 @@
 curl
 feh
 htop
-net-tools
 mpv
+net-tools
 nvidia-driver-510
 openssh-server
 p7zip-full
