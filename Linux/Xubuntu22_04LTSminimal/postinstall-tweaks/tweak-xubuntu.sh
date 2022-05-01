@@ -20,7 +20,7 @@ sudo chmod 600 /swapfile
 sudo swapon /swapfile
 sudo rm /usr/share/xfce4/backdrops/*
 sudo find /usr/share/backgrounds/ -name \* -type f -delete
-sudo wget https://www.htmlcsscolor.com/preview/32x32/000000.png -P /usr/share/xfce4/backdrops
+sudo cp 000000.png /usr/share/xfce4/backdrops
 cp xfce-perchannel-xml/* ~/.config/xfce4/xfconf/xfce-perchannel-xml
 sudo mkdir /etc/X11/xorg.conf.d/;sudo cp 50-mouse-acceleration.conf /etc/X11/xorg.conf.d
 sudo cp locale /etc/default
