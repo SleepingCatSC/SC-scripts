@@ -29,4 +29,4 @@ cat bash-aliases | sudo tee -a /root/.bashrc
 cat pac-proxy | sudo tee -a /etc/environment
 sudo cp vsftpd.conf /etc
 reboot
-# wget https://github.com/clickot/ungoogled-chromium-binaries/releases/download/100.0.4896.127-1/ungoogled-chromium_100.0.4896.127-1.1.AppImage
+# wget https://github.com/clickot/ungoogled-chromium-binaries/releases/download/101.0.4951.41-1/ungoogled-chromium_101.0.4951.41-1.1.AppImage
