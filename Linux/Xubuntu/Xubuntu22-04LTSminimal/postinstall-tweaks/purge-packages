@@ -1,0 +1,17 @@
+apport
+bluez*
+cheese-common
+dictionaries-common
+gucharmap
+libreoffice*
+nano
+pavucontrol
+snapd
+software-properties-gtk
+synaptic
+thunderbird
+ufw
+update-manager
+update-notifier
+xfce4-power-manager-plugins
+xfce4-pulseaudio-plugin
