@@ -1,4 +1,3 @@
-
 alias all-commands='compgen -c | sort | uniq | less'
 alias clip='xclip -se c'
 alias cls='clear'

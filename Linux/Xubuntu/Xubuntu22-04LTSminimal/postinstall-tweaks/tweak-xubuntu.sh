@@ -24,8 +24,8 @@ sudo cp 000000.png /usr/share/xfce4/backdrops
 cp xfce-perchannel-xml/* ~/.config/xfce4/xfconf/xfce-perchannel-xml
 sudo mkdir /etc/X11/xorg.conf.d/;sudo cp 50-mouse-acceleration.conf /etc/X11/xorg.conf.d
 sudo cp locale /etc/default
-cat bash-aliases >> ~/.bashrc
-cat bash-aliases | sudo tee -a /root/.bashrc
+cp .bash_aliases ~
+sudo cp .bash_aliases /root
 cat pac-proxy | sudo tee -a /etc/environment
 sudo cp vsftpd.conf /etc
 reboot
