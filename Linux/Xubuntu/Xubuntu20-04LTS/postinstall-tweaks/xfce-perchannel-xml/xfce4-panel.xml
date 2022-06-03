@@ -52,7 +52,7 @@
       <property name="style" type="uint" value="0"/>
     </property>
     <property name="plugin-3" type="string" value="tasklist">
-      <property name="flat-buttons" type="bool" value="true"/>
+      <property name="flat-buttons" type="bool" value="false"/>
       <property name="show-handle" type="bool" value="false"/>
       <property name="show-labels" type="bool" value="true"/>
       <property name="sort-order" type="uint" value="3"/>
